@@ -7,6 +7,7 @@ from PIL import Image
 
 st.title("Convierte tu imagen a texto")
 image = Image.open('Fotografo.jpg')
+st.image(image,width=300)
 img_file_buffer = st.camera_input("Toma una foto, Intenta que tenga buena iluminación")
 
 with st.sidebar:
