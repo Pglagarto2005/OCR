@@ -5,9 +5,10 @@ import pytesseract
 from PIL import Image
 
 
-st.title("Reconocimiento óptico de Caracteres")
+st.title("Convierte tu imagen a texto")
 
-img_file_buffer = st.camera_input("Toma una Foto")
+img_file_buffer = st.camera_input("Toma una foto")
+img_file_buffer = st.camera_input("Intenta que tenga buena iluminación")
 
 with st.sidebar:
       filtro = st.radio("Aplicar Filtro",('Con Filtro', 'Sin Filtro'))
